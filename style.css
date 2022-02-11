@@ -64,14 +64,23 @@ main .container {
     min-height: calc(100vh - 10.5rem);
 }
 
-.menu-mobile {
-    display: none;
-}
-
 .menu {
     width: 30%;
     background: var(--detail-color);
     padding: 0.75rem;
+    padding-top: 1.5rem;
+}
+
+.summary-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: var(--emphasis-color);
+}
+
+.summary-subtitle {
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: var(--emphasis-gray-color-darker);
 }
 
 .menu-title {
@@ -94,8 +103,8 @@ main .container {
 }
 
 .menu-link li::before {
-    content: ">";
-    font-weight: bolder;
+    content: "✱";
+    font-size: 0.75rem;
     color: var(--emphasis-gray-color);
     padding-right: 0.5rem;
 }
@@ -257,18 +266,6 @@ select:focus {
     color: var(--text-color);
 }
 
-.summary-title {
-    font-size: 1.25rem;
-    font-weight: bold;
-    color: var(--emphasis-color);
-}
-
-.summary-subtitle {
-    font-size: 1.125rem;
-    font-weight: bold;
-    color: var(--emphasis-gray-color-darker);
-}
-
 @media screen and (max-width: 1024px) {
     .container {
         width: 95%;
@@ -304,15 +301,9 @@ select:focus {
         display: inline;
     }
 
-    .menu-mobile {
-        display: flex;
-        background: var(--detail-color);
-        padding: 0.75rem;
-        width: 100%;
-    }
-
     .menu {
-        display: none;
+        width: 100%;
+        padding-top: 0.75rem;
     }
 
     .content {
