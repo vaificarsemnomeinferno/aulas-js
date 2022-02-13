@@ -1,0 +1,12 @@
+index.html
+
+Com 320px de largura:
+- Separar um pouco os botões de formulário;
+
+Com 480px de largura:
+- ok;
+
+Com 768px de largura:
+- Ver se tem como deixar um pouco mais separado no rodapé o lado esquerdo (desenvolvido por...) e o lado direito (redes sociais)
+
+- Redes sociais: Deixar apenas github e linkedin? Deixar todas? Decidir para criar o modelo e outras páginas.
