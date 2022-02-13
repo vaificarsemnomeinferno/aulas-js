@@ -71,6 +71,10 @@ main .container {
     padding-top: 1.5rem;
 }
 
+details {
+    cursor: pointer;
+}
+
 .summary-title {
     font-size: 1.25rem;
     font-weight: bold;
@@ -128,6 +132,12 @@ main .container {
 
 .content p {
     text-align: justify;
+}
+
+.img-intro {
+    width: 30%;
+    float: left;
+    margin: 0.25rem 1rem 1rem 0;
 }
 
 .content-link {
@@ -351,8 +361,22 @@ select:focus {
         padding: 0 10px;
     }
 
+    .img-intro {
+        width: 40%;
+    }
+
     .division-2, .division-3 {
         width: 100%;
         padding-bottom: 1rem;
     }    
+}
+
+/* Adaptando o botão para telas bem menores */
+
+@media screen and (max-width: 380px) {
+    .buttons {
+        display: block;
+        padding: 1rem 0;
+        text-align: center;
+    }
 }
