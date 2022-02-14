@@ -11,6 +11,15 @@
     <link rel="shortcut icon" type="imagex/png" href="assets/favicon/javascript.ico">
     <link rel="stylesheet" href="assets/styles/style.css" />
     <link rel="stylesheet" href="assets/icons/style.css" />
+    <script src="assets/scripts/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      $(function()
+      {
+        $("#l1").load("assets/items/menu.html #l1");
+        $("#l2").load("assets/items/menu.html #l2");
+        $("#l3").load("assets/items/menu.html #l3");
+      });
+    </script>
   </head>
   <body onload="abrirEFecharSummary()">
     <nav class="navbar">
@@ -29,39 +38,18 @@
           <details id="detail-1" open>
             <summary class="summary-title">Navegue pelas atividades</summary>
             <details id="detail-2" open>
-              <summary class="summary-subtitle">Atividades</summary>
-              <ul class="menu-link">
-                <li><a href="funcoes.html">Clique Aqui/Não Clique Aqui</a></li>
-                <li><a href="ola.html">Qual é o seu nome?</a></li>
-                <li><a href="mensagem.html">Mensagem!</a></li>
-                <li><a href="parouimpar.html">Par ou ímpar?</a></li>
-                <li><a href="diadasemana.html">Dia da Semana</a></li>
-                <li><a href="noturno.html">Modo noturno</a></li>
-                <li><a href="imposto.html">Cálculo do IPVA</a></li>
-                <li><a href="combustiveis.html">Qual combustível abastecer?</a></li>
-                <li><a href="beneficio.html">Recebimento de Benefício</a></li>
-                <li><a href="investimento.html">Simulação de Investimento</a></li>
-                <li><a href="parcelamento.html">Simulação de Parcelamento</a></li>
-                <li><a href="tabuada.html">Calculando a Tabuada</a></li>
-              </ul>
+            <summary class="summary-subtitle">Atividades</summary>
+            <ul id="l1"></ul>
             </details>
             <details>
-              <summary class="summary-subtitle">Atividades de Revisão</summary>
-              <ul class="menu-link">
-                <li><a href="calculadora.html">Calculadora Básica</a></li>
-                <li><a href="megasena.html">Gerador de Números para Mega-Sena</a></li>
-              </ul>
+            <summary class="summary-subtitle">Atividades de Revisão</summary>
+            <ul id="l2"></ul>
             </details>
             <details>
-              <summary class="summary-subtitle">Extra</summary>
-              <ul class="menu-link">
-                <li><a href="buscacep.html">Buscador de CEP</a></li>
-                <li><a href="gerador.html">Gerador de Números para Loterias</a></li>
-                <li><a href="pedra-papel-tesoura.html">Pedra, papel, tesoura</a></li>
-                <li><a href="validacpf.html">Validação de CPF</a></li>
-              </ul>
+            <summary class="summary-subtitle">Extra</summary>
+            <ul id="l3"></ul>
             </details>
-          </details>
+        </details>
         </section>
         <section class="content">
           <h2>Bem-vindo(a)!</h2>
