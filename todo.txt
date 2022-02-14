@@ -1,6 +1,3 @@
-index.html
+Ver aquele negócio do JQuery se consigo carregar os menus por ele para não precisar ficar repetindo
 
-Com 768px de largura:
-- Ver se tem como deixar um pouco mais separado no rodapé o lado esquerdo (desenvolvido por...) e o lado direito (redes sociais)
-
-- Também ver em alguns tamanhos de tela a parte do header, mesmo problema acima, que ainda tá incomodando...
+Se der certo, fazer o mesmo com outras áreas, como o navbar e o rodapé (no momento menos importante)

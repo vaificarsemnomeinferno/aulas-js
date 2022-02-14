@@ -1,8 +1,6 @@
 window.addEventListener('resize',abrirEFecharSummary)
 
 function abrirEFecharSummary() {
-
-    console.log('Tá chamando a função');
     const detail1 = document.getElementById('detail-1');
     const detail2 = document.getElementById('detail-2');
     const screen = document.body.clientWidth;

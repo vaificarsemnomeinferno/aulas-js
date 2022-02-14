@@ -276,6 +276,8 @@ select:focus {
     color: var(--text-color);
 }
 
+/* Tamanho médio */
+
 @media screen and (max-width: 1024px) {
     .container {
         width: 95%;
@@ -290,19 +292,13 @@ select:focus {
     }
 }
 
+/* Tamanho pequeno */
+
 @media screen and (max-width: 768px) {
     .container {
         width: 100%;
         padding-left: 0.75rem;
         padding-right: 0.75rem;
-    }
-
-    .left-title {
-        font-size: 1.5rem;
-    }
-
-    .right-title {
-        font-size: 1.15rem;
     }
 
     main .container {
@@ -331,21 +327,13 @@ select:focus {
 
     .footer .container {
         flex-wrap: wrap;
-        justify-content: center;
-        text-align: center;
+        justify-content: space-between;
     }
-
-    /* .developer {
-        width: 100%;
-        border: green solid 1px;
-    }
-
-    .contact {
-        width: 100%;
-    } */
 }
 
-@media screen and (max-width: 480px) {
+/* Pequenas adaptações de layout no tamanho pequeno */
+
+@media screen and (max-width: 560px) {
     .navbar {
         height: 6rem;
     }
@@ -358,9 +346,28 @@ select:focus {
     }
 
     .left-title, .right-title {
-        padding: 0 10px;
+        width: 100%;
     }
 
+    .footer .container {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .developer {
+        width: 100%;
+        border: green solid 1px;
+    }
+
+    .contact {
+        width: 100%;
+    }
+}
+
+/* Tamanho extra pequeno */
+
+@media screen and (max-width: 480px) {
     .img-intro {
         width: 40%;
     }
