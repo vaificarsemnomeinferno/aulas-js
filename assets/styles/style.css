@@ -31,13 +31,11 @@ body {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    /* border: blue solid 1px; */
 }
 
 nav .container, footer .container {
     height: 100%;
     align-items: center;
-    /* border: green solid 1px; */
 }
 
 .left-title {
@@ -55,12 +53,7 @@ nav .container, footer .container {
     color: var(--text-color);
 }
 
-/* section {
-    border: red solid 1px;
-} */
-
 main .container {
-    /* border: magenta solid 1px; */
     min-height: calc(100vh - 10.5rem);
 }
 
@@ -95,31 +88,39 @@ details {
     color: var(--emphasis-gray-color);
 }
 
+ul#l1, ul#l2, ul#l3 {
+    margin-left: 0;
+    padding-left: 16px;
+}
+
 .menu-link {
     list-style-type: none;
     padding-left: 0;
 }
 
-.menu-link li {
+.menu-link li, .menu-link-1, .menu-link-2, .menu-link-3 {
     margin-left: 0;
     padding: 0.2rem 0;
-    /* border: cyan solid 1px; */
 }
 
-.menu-link li::before {
+.menu-link-1::marker, .menu-link-2::marker, .menu-link-3::marker {
+    content: "";
+}
+
+.menu-link li::before, .menu-link-1::before, .menu-link-2::before, .menu-link-3::before {
     content: "✱";
     font-size: 0.75rem;
     color: var(--emphasis-gray-color);
     padding-right: 0.5rem;
 }
 
-.menu-link a {
+.menu-link a, .menu-link-1 a, .menu-link-2 a, .menu-link-3 a {
     text-decoration: none;
     color: var(--content-color);
     transition: 0.2s;
 }
 
-.menu-link a:hover {
+.menu-link a:hover, .menu-link-1 a:hover, .menu-link-2 a:hover, .menu-link-3 a:hover {
     color: var(--emphasis-color)
 }
 
@@ -127,7 +128,6 @@ details {
     width: 70%;
     background: var(--content-color);
     padding: 0.75rem;
-    /* border-right: var(--detail-color) solid 5px; */
 }
 
 .content p {
@@ -357,7 +357,6 @@ select:focus {
 
     .developer {
         width: 100%;
-        border: green solid 1px;
     }
 
     .contact {

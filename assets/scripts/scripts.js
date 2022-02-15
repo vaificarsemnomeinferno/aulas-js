@@ -3,8 +3,6 @@ window.addEventListener('resize',abrirEFecharSummary);
 function abrirEFecharSummary() {
     const detail1 = document.getElementById('detail-1');
     const detail2 = document.getElementById('detail-2');
-    console.log(detail1);
-    console.log(detail2);
     const screen = document.body.clientWidth;
 
     if (screen <= 768) {
