@@ -61,41 +61,30 @@
           </details>
         </section>
         <section class="content">
-          <h2>Pequeno título</h2>
-          <h1>Título da página</h1>
-          <p>Conteúdo</p>
+          <h2>Estruturas Condicionais</h2>
+          <h1>Cálculo do IPVA</h1>
+          <p>No estado de São Paulo o valor do IPVA é de 4% do valor do veículo com 20 anos ou menos de fabricação. Nesse simulador simplificado aplicamos essas regras para o cálculo. Lembrando que há outras regras mais específicas e que aqui simulamos apenas utilizando a regra geral para o cálculo.</p>
           <h2>
-            A parte abaixo é apenas um teste para utilização dos formulários dos exemplos
+            Insira os dados no formulário abaixo:
           </h2>
           <form action="" method="post" class="form">
             <div class="linha">
-              <div class="division-3">
-                <label for="enabled" class="form-label">Caixa de Texto</label>
-                <input type="text" name="habilitada" id="enabled" class="form-input" placeholder="Digite algo..." />
+              <div class="division-2">
+                <label for="txtValor" class="form-label">Valor de Tabela do Veículo</label>
+                <input type="text" name="valor" id="txtValor" class="form-input" placeholder="Digite o valor..." autofocus />
               </div>
-              <div class="division-3">
-                <label for="disabled" class="form-label">Caixa de Texto Desabilitada</label>
-                <input type="text" name="desabilitada" id="disabled" class="form-input" placeholder="Não dá..." disabled />
-              </div>
-              <div class="division-3">
-                <label for="disabled" class="form-label">Select</label>
-                <select name="select" id="selecione" class="form-input">
-                  <option value="pri">Primeira</option>
-                  <option value="sec">Segunda</option>
-                  <option value="thi">Terceira</option>
-                </select>
+              <div class="division-2">
+                <label for="txtAno" class="form-label">Ano de Fabricação do Veículo</label>
+                <input type="text" name="ano" id="txtAno" class="form-input" placeholder="Digite o ano de fabricação..." />
               </div>
             </div>
             <div class="buttons">
-              <button class="form-button button-primary">Primário</button>
-              <button class="form-button button-secondary">Secundário</button>
+              <button type="button" class="form-button button-primary" onclick="calcularImposto()">Calcular</button>
+              <button type="reset" class="form-button button-secondary">Limpar</button>
             </div>
           </form>
           <div class="output output-primary" id="resultado">
-            Isso é um teste para as respostas vindas do código JavaScript.
-          </div>
-          <div class="output output-secondary" id="resultado-sec">
-            Isso é outro teste para as respostas vindas do código JavaScript, quando precisarmos de algo secundário.
+            
           </div>
         </section>
       </div>
@@ -120,6 +109,6 @@
       </div>
     </footer>
     <script type="text/javascript" src="../assets/scripts/scripts.js"></script>
-    <script type="text/javascript" src="../assets/scripts/"></script>
+    <script type="text/javascript" src="../assets/scripts/condicionais.js"></script>
   </body>
 </html>

@@ -61,42 +61,26 @@
           </details>
         </section>
         <section class="content">
-          <h2>Pequeno título</h2>
-          <h1>Título da página</h1>
-          <p>Conteúdo</p>
-          <h2>
-            A parte abaixo é apenas um teste para utilização dos formulários dos exemplos
-          </h2>
+          <h2>Estruturas Condicionais</h2>
+          <h1>Mensagem!</h1>
+          <p>Neste exemplo temos uma caixa em que o usuário escolhe uma cidade. Se a cidade que o usuário escolher for Pindamonhangaba, aparecerá uma mensagem para ele em um <span class="monospace">alert</span>. Caso contrário, nada acontecerá</p>
+          
           <form action="" method="post" class="form">
             <div class="linha">
-              <div class="division-3">
-                <label for="enabled" class="form-label">Caixa de Texto</label>
-                <input type="text" name="habilitada" id="enabled" class="form-input" placeholder="Digite algo..." />
-              </div>
-              <div class="division-3">
-                <label for="disabled" class="form-label">Caixa de Texto Desabilitada</label>
-                <input type="text" name="desabilitada" id="disabled" class="form-input" placeholder="Não dá..." disabled />
-              </div>
-              <div class="division-3">
-                <label for="disabled" class="form-label">Select</label>
-                <select name="select" id="selecione" class="form-input">
-                  <option value="pri">Primeira</option>
-                  <option value="sec">Segunda</option>
-                  <option value="thi">Terceira</option>
-                </select>
-              </div>
-            </div>
-            <div class="buttons">
-              <button class="form-button button-primary">Primário</button>
-              <button class="form-button button-secondary">Secundário</button>
+              <legend class="form-legend">Qual é a sua cidade?</legend>
+              <select name="select" id="selCidade" class="form-input" onchange="verificarCidade()">
+                <option value="selecione">Selecione</option>
+                <option value="guara">Guaratinguetá</option>
+                <option value="pinda">Pindamonhangaba</option>
+                <option value="taubate">Taubaté</option>
+                <option value="outra">Outra</option>
+              </select>
             </div>
           </form>
-          <div class="output output-primary" id="resultado">
-            Isso é um teste para as respostas vindas do código JavaScript.
-          </div>
-          <div class="output output-secondary" id="resultado-sec">
-            Isso é outro teste para as respostas vindas do código JavaScript, quando precisarmos de algo secundário.
-          </div>
+          <h3>Texto de exemplo de conteúdo...</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod nostrum explicabo eveniet laudantium minus ex! Consectetur numquam quam beatae reiciendis cum cumque modi assumenda, quasi nesciunt, architecto impedit quas suscipit!</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea commodi unde, vel, sed ex voluptate exercitationem non in rerum sunt asperiores sint aliquid, dolores optio nulla omnis perspiciatis mollitia accusantium?</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis in soluta totam assumenda reiciendis et aperiam dicta saepe ipsa ullam aliquid repudiandae, earum, ratione voluptate id quis, minus eius illum?</p>
         </section>
       </div>
     </main>
@@ -120,6 +104,6 @@
       </div>
     </footer>
     <script type="text/javascript" src="../assets/scripts/scripts.js"></script>
-    <script type="text/javascript" src="../assets/scripts/"></script>
+    <script type="text/javascript" src="../assets/scripts/condicionais.js"></script>
   </body>
 </html>

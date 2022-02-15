@@ -61,41 +61,17 @@
           </details>
         </section>
         <section class="content">
-          <h2>Pequeno título</h2>
-          <h1>Título da página</h1>
-          <p>Conteúdo</p>
-          <h2>
-            A parte abaixo é apenas um teste para utilização dos formulários dos exemplos
-          </h2>
+          <h2>Introdução ao JavaScript</h2>
+          <h1>Clique Aqui/Não Clique Aqui</h1>
+          <p>Atividade de exemplo para aplicação de funções em um botão, através do evento <span class="monospace">onclick</span>. Cada um dos botões dispara um simples <span class="monospace">alert</span> com uma frase.</p>
           <form action="" method="post" class="form">
-            <div class="linha">
-              <div class="division-3">
-                <label for="enabled" class="form-label">Caixa de Texto</label>
-                <input type="text" name="habilitada" id="enabled" class="form-input" placeholder="Digite algo..." />
-              </div>
-              <div class="division-3">
-                <label for="disabled" class="form-label">Caixa de Texto Desabilitada</label>
-                <input type="text" name="desabilitada" id="disabled" class="form-input" placeholder="Não dá..." disabled />
-              </div>
-              <div class="division-3">
-                <label for="disabled" class="form-label">Select</label>
-                <select name="select" id="selecione" class="form-input">
-                  <option value="pri">Primeira</option>
-                  <option value="sec">Segunda</option>
-                  <option value="thi">Terceira</option>
-                </select>
-              </div>
-            </div>
             <div class="buttons">
-              <button class="form-button button-primary">Primário</button>
-              <button class="form-button button-secondary">Secundário</button>
+              <button type="button" class="form-button button-primary" onclick="naoClique()">Não clique aqui!</button>
+              <button type="button" class="form-button button-primary" onclick="clique()">Clique aqui!</button>
             </div>
           </form>
-          <div class="output output-primary" id="resultado">
-            Isso é um teste para as respostas vindas do código JavaScript.
-          </div>
-          <div class="output output-secondary" id="resultado-sec">
-            Isso é outro teste para as respostas vindas do código JavaScript, quando precisarmos de algo secundário.
+          <div class="output output-primary" id="resposta-pri">
+            <!-- Sugestão: colocar a frase do botão aqui, ao invés do alert. -->
           </div>
         </section>
       </div>
@@ -109,6 +85,7 @@
           <p>
             &copy;
             <script type="text/javascript">
+              console.log('teste')
               document.write(new Date().getFullYear())
             </script>
             Todos os direitos reservados.
@@ -120,6 +97,6 @@
       </div>
     </footer>
     <script type="text/javascript" src="../assets/scripts/scripts.js"></script>
-    <script type="text/javascript" src="../assets/scripts/"></script>
+    <script type="text/javascript" src="../assets/scripts/introducao.js"></script>
   </body>
 </html>
