@@ -212,7 +212,7 @@ select:focus {
 
 .buttons {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     padding: 1rem;
 }
 
@@ -229,10 +229,12 @@ select:focus {
 
 .button-primary {
     background-color: var(--emphasis-color);
+    margin-right: 7.5px;
 }
 
 .button-secondary {
     background-color: var(--emphasis-gray-color);
+    margin-left: 7.5px;
 }
 
 .button-primary:hover {

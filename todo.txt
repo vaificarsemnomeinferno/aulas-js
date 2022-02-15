@@ -1,3 +1,5 @@
-Ver aquele negócio do JQuery se consigo carregar os menus por ele para não precisar ficar repetindo
+Revisão final dos formulários
 
-Se der certo, fazer o mesmo com outras áreas, como o navbar e o rodapé (no momento menos importante)
+Depois só alegria com as outras páginas
+
+Refazer a página 'index-alunos'? Ou não inseriremos jquery nela?
