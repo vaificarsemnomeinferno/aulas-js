@@ -140,6 +140,11 @@ ul#l1, ul#l2, ul#l3 {
     font-weight: bold;
 }
 
+.destaque {
+    color: red;
+    font-weight: bold;
+}
+
 .img-intro {
     width: 30%;
     float: left;

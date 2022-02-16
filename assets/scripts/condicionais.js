@@ -1,4 +1,5 @@
 const resultado = document.getElementById('resultado');
+const resultadoSecundario = document.getElementById('resultado-sec');
 
 function verificarCidade() {
     const cidade = document.getElementById('selCidade').value;
@@ -62,6 +63,7 @@ function exibirDataDeHoje() {
     const dia = agora.getDate();
     let mes = agora.getMonth();
     const ano = agora.getFullYear();
+    let frase;
 
     if(diaDaSemana == 0) {
         diaDaSemana = "Domingo";
@@ -80,6 +82,30 @@ function exibirDataDeHoje() {
     } else {
         alert("Ocorreu um problema para determinar o dia da semana.")
         diaDaSemana = "";
+    }
+
+    switch(mes){
+        case 0:
+        case 2:
+        case 4:
+        case 6:
+        case 7:
+        case 9:
+        case 11:
+            frase = "Este mês tem 31 dias.";
+            break;
+        case 3:
+        case 5:
+        case 8:
+        case 10:
+            frase = "Este mês tem 30 dias.";
+            break;
+        case 1:
+            frase = "A depender do ano, este mês pode ter 28 ou 29 dias.";
+            break;
+        default:
+            alert("Não foi possível determinar o mês.");
+            break;
     }
 
     switch(mes){
@@ -125,5 +151,28 @@ function exibirDataDeHoje() {
             break;
     }
 
-    resultado.innerHTML = `<p>${diaDaSemana}, ${dia} de ${mes} de ${ano}.</p>`
+    resultado.innerHTML = `<p>${diaDaSemana}, ${dia} de ${mes} de ${ano}.</p>`;
+    resultadoSecundario.innerHTML = `<p>${frase}</p>`
+}
+
+function verificarBeneficio() {
+    const salario = document.getElementById("txtSalario").value;
+    const anoInicio = document.getElementById("txtAnoInicio").value;
+    const anoAtual = new Date().getFullYear();
+    var beneficio, frase;
+    resultado.style.display = 'block';
+
+    if (salario < 2200 && anoInicio < anoAtual-10) {
+        beneficio = salario * 0.1;
+        beneficio = beneficio.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+        resultado.innerHTML = "<p>O valor do benefício será " + beneficio;
+    }
+    else if (salario < 2200 || anoInicio < anoAtual-10) {
+        beneficio = salario * 0.05;
+        beneficio = beneficio.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+        resultado.innerHTML = "<p>O valor do benefício será " + beneficio;
+    }
+    else {
+        resultado.innerHTML = "<p>O funcionário não poderá receber o benefício.</p>";
+    }
 }

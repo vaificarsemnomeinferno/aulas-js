@@ -24,7 +24,7 @@
       })
     </script>
   </head>
-  <body onload="abrirEFecharSummary(); exibirDataDeHoje();">
+  <body onload="abrirEFecharSummary()">
     <nav class="navbar">
       <div class="container">
         <section class="left-title">
@@ -61,15 +61,33 @@
           </details>
         </section>
         <section class="content">
-          <h2>Estruturas Condicionais e Classe Date()</h2>
-          <h1>Trabalhando com Datas - Retornando a Data de Hoje</h1>
-          <p>Neste exemplo utilizaremos a classe Date do JavaScript para retornar a data de hoje, mas também utilzaremos algumas estruturas condicionais para formatarmos o dia da semana que estamos e o mês atual, além de informar quantos dias o mês atual possui.</p>
-          
-          <div class="output output-primary" id="resultado" style="display: block;">
-            
+          <h2>Estruturas Condicionais e Operadores AND/OR (E/OU)</h2>
+          <h1>Recebimento de Benefício</h1>
+          <p>Considere o seguinte problema: <em>Uma empresa resolveu conceder um benefício para seus funcionários em determinada época do ano. Para receber esse benefício, porém, os empregados deveriam seguir algumas condições: <strong>a) </strong>Os funcionários com mais de 10 anos de empresa <span class="destaque">e</span> salário menor do que 2200 reais recebem 10% do valor do seu salário. <strong>b) </strong>Os funcionários que atendem uma <span class="destaque">ou</span> outra das condições acima recebem 5% do valor do salário. <strong>c) </strong>Caso contrário o funcionário não terá direito ao benefício</em>.</p>
+          <h2>
+            A parte abaixo é apenas um teste para utilização dos formulários dos exemplos
+          </h2>
+          <form action="" method="post" class="form">
+            <div class="linha">
+              <div class="division-2">
+                <label for="txtSalario" class="form-label">Salário bruto</label>
+                <input type="text" name="salario" id="txtSalario" class="form-input" autofocus />
+              </div>
+              <div class="division-2">
+                <label for="txtAnoInicio" class="form-label">Ano de início na empresa</label>
+                <input type="text" name="anoinicio" id="txtAnoInicio" class="form-input" />
+              </div>
+            </div>
+            <div class="buttons">
+              <button type="button" class="form-button button-primary" onclick="verificarBeneficio()">Verificar</button>
+              <button type="reset" class="form-button button-secondary">Limpar</button>
+            </div>
+          </form>
+          <div class="output output-primary" id="resultado">
+            Isso é um teste para as respostas vindas do código JavaScript.
           </div>
-          <div class="output output-secondary" id="resultado-sec" style="display: block;">
-            
+          <div class="output output-secondary" id="resultado-sec">
+            Isso é outro teste para as respostas vindas do código JavaScript, quando precisarmos de algo secundário.
           </div>
         </section>
       </div>
