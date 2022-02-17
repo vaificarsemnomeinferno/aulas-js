@@ -1,0 +1,27 @@
+:root {
+  --mega-sena-color: #209869;
+}
+
+.output-special {
+  /* border: red solid 1px; */
+  display: none;
+  /* flex-wrap: nowrap; */
+  /* flex-direction: row; */
+  justify-content: space-evenly;
+}
+
+.teste {
+  border: var(--mega-sena-color) solid 2px;
+  background: var(--mega-sena-color);
+  border-radius: 50%;
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+}
+
+.teste p {
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  margin: auto;
+}

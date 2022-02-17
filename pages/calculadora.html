@@ -61,34 +61,41 @@
           </details>
         </section>
         <section class="content">
-          <h2>Estruturas Condicionais e Operadores AND/OR (E/OU)</h2>
-          <h1>Recebimento de Benefício</h1>
-          <p>Considere o seguinte problema: <em>Uma empresa resolveu conceder um benefício para seus funcionários em determinada época do ano. Para receber esse benefício, porém, os empregados deveriam seguir algumas condições: <strong>a) </strong>Os funcionários com mais de 10 anos de empresa <span class="destaque">e</span> salário menor do que 2200 reais recebem 10% do valor do seu salário. <strong>b) </strong>Os funcionários que atendem uma <span class="destaque">ou</span> outra das condições acima recebem 5% do valor do salário. <strong>c) </strong>Caso contrário o funcionário não terá direito ao benefício</em>.</p>
-          <h2>
-            A parte abaixo é apenas um teste para utilização dos formulários dos exemplos
-          </h2>
+          <h2>Estruturas Condicionais - Revisão</h2>
+          <h1>Calculadora Básica</h1>
+          <p>Neste exemplo de revisão criamos um formulário que o usuário pode digitar dois números e escolher uma das quatro operações básicas para obter o resultado.</p>
           <form action="" method="post" class="form">
             <div class="linha">
-              <div class="division-2">
-                <label for="txtSalario" class="form-label">Salário bruto</label>
-                <input type="text" name="salario" id="txtSalario" class="form-input" autofocus />
+              <div class="division-3">
+                <label for="txtNumero1" class="form-label">Primeiro número:</label>
+                <input type="text" name="numero2" id="txtNumero1" class="form-input" autofocus />
               </div>
-              <div class="division-2">
-                <label for="txtAnoInicio" class="form-label">Ano de início na empresa</label>
-                <input type="text" name="anoinicio" id="txtAnoInicio" class="form-input" />
+              <div class="division-3">
+                <label for="selOperacoes" class="form-label">Selecione a Operação:</label>
+                <select name="select" id="selecione" class="form-input">
+                  <option value="selecione">Selecione</option>
+                  <option value="soma">Adição</option>
+                  <option value="subtracao">Subtração</option>
+                  <option value="multiplicacao">Multiplicação</option>
+                  <option value="divisao">Divisão</option>
+                </select>
+              </div>
+              <div class="division-3">
+                <label for="txtNumero2" class="form-label">Segundo número:</label>
+                <input type="text" name="numero1" id="txtNumero2" class="form-input" />
               </div>
             </div>
             <div class="buttons">
-              <button type="button" class="form-button button-primary" onclick="verificarBeneficio()">Verificar</button>
+              <button type="button" class="form-button button-primary">Calcular</button>
               <button type="reset" class="form-button button-secondary">Limpar</button>
             </div>
+            <div class="linha">
+              <div class="division-1">
+                <label for="txtResultado" class="form-label">Resultado:</label>
+                <input type="text" name="resultado" id="txtResultado" class="form-input" disabled />
+              </div>
+            </div>
           </form>
-          <div class="output output-primary" id="resultado">
-            
-          </div>
-          <div class="output output-secondary" id="resultado-sec" style="display: block; border-color: red;">
-            Lembrar de criar também para o segundo exemplo do "benefício" (com filhos)
-          </div>
         </section>
       </div>
     </main>
@@ -112,6 +119,6 @@
       </div>
     </footer>
     <script type="text/javascript" src="../assets/scripts/scripts.js"></script>
-    <script type="text/javascript" src="../assets/scripts/condicionais.js"></script>
+    <script type="text/javascript" src="../assets/scripts/calculadora.js"></script>
   </body>
 </html>
