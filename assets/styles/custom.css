@@ -33,6 +33,31 @@
   font-size: 2rem;
 }
 
+.form-input {
+  width: 60%;
+  display: inline-block;
+}
+
+.linha {
+  border: cyan solid 1px;
+}
+
+#resultado {
+  border: blue solid 1px;
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  align-self: baseline;
+}
+
+.icone-invalido {
+  color: red;
+}
+
+.icone-valido {
+  color: green;
+}
+
 @media screen and (max-width: 960px) {
   .bolinhas {
     width: 26rem;
