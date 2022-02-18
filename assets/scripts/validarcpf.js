@@ -29,19 +29,18 @@
 function testarCPF() {
     const inputCPF = document.getElementById('txtCPF');
     const mensagem = document.getElementById('resultado');
-    const icone = document.getElementById('icone-cpf')
     const cpfValido = validarCPF();
     mensagem.style.display = 'block'
 
     if (cpfValido == false) {
         // inputCPF.classList.add('invalido');
         // icone.innerHTML = 'highlight_off';
-        mensagem.innerHTML = "<img src='../assets/icons/material/highlight_off_black_24dp.svg' alt='Ícone CPF inválido' class='icone-invalido'>";
+        mensagem.innerHTML = "<span class='material-icons-round icone-material icone-invalido'>highlight_off</span>";
     }
     else {
         // inputCPF.classList.remove('invalido');
         // icone.innerHTML = 'check_circle_outline';
-        mensagem.innerHTML = "<img src='../assets/icons/material/check_circle_outline_black_24dp.svg' alt='Ícone CPF válido' class='icone-valido'>"
+        mensagem.innerHTML = "<span class='material-icons-round icone-material icone-valido'>check_circle_outline</span>";
     }
 }
           
