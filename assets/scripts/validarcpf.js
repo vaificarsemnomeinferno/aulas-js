@@ -43,4 +43,11 @@ function testarCPF() {
         mensagem.innerHTML = "<span class='material-icons-round icone-material icone-valido'>check_circle_outline</span>";
     }
 }
+
+document.addEventListener("keydown", function(e) {
+    if(e.key === 'Enter') {
+        testarCPF();
+        e.preventDefault();
+    }
+  });
           

@@ -14,3 +14,10 @@ function abrirEFecharSummary() {
         detail2.setAttribute('open',true);
     }
 }
+
+// Para ENTER não enviar formulário
+document.addEventListener("keydown", function(e) {
+    if(e.key === 'Enter') {
+        e.preventDefault();
+    }
+  });

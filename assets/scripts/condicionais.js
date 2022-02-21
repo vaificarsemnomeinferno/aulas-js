@@ -159,7 +159,7 @@ function verificarBeneficio() {
     const salario = document.getElementById("txtSalario").value;
     const anoInicio = document.getElementById("txtAnoInicio").value;
     const anoAtual = new Date().getFullYear();
-    var beneficio, frase;
+    var beneficio;
     resultado.style.display = 'block';
 
     if (salario < 2200 && anoInicio < anoAtual-10) {
@@ -171,6 +171,35 @@ function verificarBeneficio() {
         beneficio = salario * 0.05;
         beneficio = beneficio.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
         resultado.innerHTML = "<p>O valor do benefício será " + beneficio;
+    }
+    else {
+        resultado.innerHTML = "<p>O funcionário não poderá receber o benefício.</p>";
+    }
+}
+
+function verificarBeneficioFilhos() {
+    const salario = document.getElementById("txtSalario").value;
+    const anoInicio = document.getElementById("txtAnoInicio").value;
+    const filhos = document.getElementById("txtFilhos").value;
+    const anoAtual = new Date().getFullYear();
+    var beneficio, receber, acrescimo = 0;
+    resultado.style.display = 'block';
+    
+    if (filhos != 0) {
+        acrescimo = filhos * salario * 0.01;
+    }
+    
+    if (salario < 2200 && anoInicio < anoAtual-10) {
+        beneficio = salario * 0.1;
+        receber = beneficio + acrescimo;
+        receber = receber.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+        resultado.innerHTML = "<p>O valor do benefício será " + receber;
+    }
+    else if (salario < 2200 || anoInicio < anoAtual-10) {
+        beneficio = salario * 0.05;
+        receber = beneficio + acrescimo;
+        receber = receber.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+        resultado.innerHTML = "<p>O valor do benefício será " + receber;
     }
     else {
         resultado.innerHTML = "<p>O funcionário não poderá receber o benefício.</p>";
