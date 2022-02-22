@@ -33,45 +33,6 @@
   font-size: 2rem;
 }
 
-.form-label {
-  padding-right: 0.5rem;
-}
-
-.form-input {
-  width: initial;
-  flex-grow: 10;
-  display: inline-block;
-  border-radius: 5px 0 0 5px;
-}
-
-.form-button {
-  width: initial;
-  flex-grow: 1;
-  border-radius: 0 5px 5px 0;
-}
-
-
-#resultado {
-  display: inline-block;
-  width: 2rem;
-  height: 2rem;
-}
-
-.icone-material {
-  font-size: 1.75rem;
-  text-align: center;
-}
-
-.icone-invalido {
-  font-family: 'Material Icons';
-  color: red;
-}
-
-.icone-valido {
-  font-family: 'Material Icons';
-  color: green;
-}
-
 @media screen and (max-width: 960px) {
   .bolinhas {
     width: 26rem;

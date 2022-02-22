@@ -88,7 +88,7 @@ details {
     color: var(--emphasis-gray-color);
 }
 
-ul#l1, ul#l2, ul#l3 {
+ul#l0, ul#l1, ul#l2, ul#l3 {
     margin-left: 0;
     padding-left: 16px;
 }
@@ -98,29 +98,36 @@ ul#l1, ul#l2, ul#l3 {
     padding-left: 0;
 }
 
-.menu-link li, .menu-link-1, .menu-link-2, .menu-link-3 {
+.menu-link li, .menu-link-0, .menu-link-1, .menu-link-2, .menu-link-3 {
     margin-left: 0;
     padding: 0.2rem 0;
 }
 
-.menu-link-1::marker, .menu-link-2::marker, .menu-link-3::marker {
+.menu-link-0::marker, .menu-link-1::marker, .menu-link-2::marker, .menu-link-3::marker {
     content: "";
 }
 
 .menu-link li::before, .menu-link-1::before, .menu-link-2::before, .menu-link-3::before {
     content: "✱";
     font-size: 0.75rem;
-    color: var(--emphasis-gray-color);
     padding-right: 0.5rem;
+    color: var(--emphasis-gray-color);
 }
 
-.menu-link a, .menu-link-1 a, .menu-link-2 a, .menu-link-3 a {
+.menu-link-0::before {
+    content: "✱";
+    font-size: 0.75rem;
+    padding-right: 0.5rem;
+    color: var(--emphasis-color);
+}
+
+.menu-link a, .menu-link-0 a, .menu-link-1 a, .menu-link-2 a, .menu-link-3 a {
     text-decoration: none;
     color: var(--content-color);
     transition: 0.2s;
 }
 
-.menu-link a:hover, .menu-link-1 a:hover, .menu-link-2 a:hover, .menu-link-3 a:hover {
+.menu-link a:hover, .menu-link-0 a:hover, .menu-link-1 a:hover, .menu-link-2 a:hover, .menu-link-3 a:hover {
     color: var(--emphasis-color)
 }
 

@@ -65,11 +65,11 @@
           <h2>Extra</h2>
           <h1>Busca de CEP</h1>
           <p>Utilizando biblioteca Ajax para se conectar a uma API de busca de CEP podemos, a partir do CEP encontrado preencher alguns campos do formulário abaixo. Quando você preenche o CEP e sai do campo (com TAB ou clicando em outro campo) a função para busca do CEP já é disparada e os dados deverão aparecer nos campos correspondentes.</p>
-          <form action="" method="post" class="form">
+          <form action="" method="post" class="form" name="formendereco">
             <div class="form-container">
               <div id="cep">
                 <label for="enabled" class="form-label">CEP
-                  <input type="text" name="cep" id="txtCep" class="form-input txtCep" placeholder="Digite o CEP" />
+                  <input type="text" name="cep" id="txtCep" class="form-input txtCep" placeholder="Digite o CEP" onblur="buscarCep()"/>
                 </label>
               </div>
               <div id="endereco">
@@ -79,7 +79,7 @@
               </div>
               <div id="numero">
                 <label for="txtNumero" class="form-label">Número
-                  <input type="text" name="" id="txtNumero" class="form-input">
+                  <input type="text" name="numero" id="txtNumero" class="form-input">
                 </label>
               </div> 
               <div id="complemento">
@@ -131,6 +131,6 @@
       </div>
     </footer>
     <script type="text/javascript" src="../assets/scripts/scripts.js"></script>
-    <script type="text/javascript" src="../assets/scripts/"></script>
+    <script type="text/javascript" src="../assets/scripts/buscacep.js"></script>
   </body>
 </html>
