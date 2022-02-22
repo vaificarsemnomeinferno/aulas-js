@@ -152,10 +152,18 @@ ul#l0, ul#l1, ul#l2, ul#l3 {
     font-weight: bold;
 }
 
-.img-intro {
+.img {
     width: 30%;
     float: left;
+}
+
+.img-intro {
     margin: 0.25rem 1rem 1rem 0;
+}
+
+.img-sobre-mim {
+    clip-path: circle();
+    margin: 0 1rem 0.5rem 0;
 }
 
 .content-link {
@@ -390,14 +398,14 @@ select:focus {
 /* Tamanho extra pequeno */
 
 @media screen and (max-width: 480px) {
-    .img-intro {
+    .img {
         width: 40%;
     }
 
     .division-2, .division-3 {
         width: 100%;
         padding-bottom: 1rem;
-    }    
+    }
 }
 
 /* Adaptando o botão para telas bem menores */

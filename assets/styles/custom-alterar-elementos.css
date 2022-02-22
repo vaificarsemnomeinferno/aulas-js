@@ -1,0 +1,22 @@
+:root {
+    --emphasis-yellow: #DAA520;
+    --emphasis-red: #FF0000;
+    --emphasis-green: #006400;
+    --emphasis-blue: #0000CD;
+    --emphasis-cyan: #008B8B;
+    --emphasis-magenta: #FF1493;
+    --emphasis-orange: #FF4500;
+    --emphasis-violet: #9400D3;
+    --emphasis-gray: #565656;
+
+    --link-bg-light:#222222;
+    --link-bg-dark: #DDDDDD;
+}
+
+/* .navbar {
+    background: var(--emphasis-blue);
+}
+
+.navbar a {
+    color: var(--link-bg-dark);
+} */
