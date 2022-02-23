@@ -13,10 +13,157 @@
     --link-bg-dark: #DDDDDD;
 }
 
-/* .navbar {
+.color-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.color-label {
+    background: var(--emphasis-yellow);
+    padding: 0.4rem;
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
+
+.color-label-red {
+    background: var(--emphasis-red);
+    color: var(--link-bg-dark);
+}
+
+.color-label-green {
+    background: var(--emphasis-green);
+    color: var(--link-bg-dark);
+}
+
+.color-label-blue {
+    background: var(--emphasis-blue);
+    color: var(--link-bg-dark);
+}
+
+.color-label-orange {
+    background: var(--emphasis-orange);
+    color: var(--link-bg-dark);
+}
+
+.color-label-violet {
+    background: var(--emphasis-violet);
+    color: var(--link-bg-dark);
+}
+
+.color-label-cyan {
+    background: var(--emphasis-cyan);
+    color: var(--link-bg-dark);
+}
+
+.color-label-magenta {
+    background: var(--emphasis-magenta);
+    color: var(--link-bg-dark);
+}
+
+.color-label-gray {
+    background: var(--emphasis-gray);
+    color: var(--link-bg-dark);
+}
+
+.color-form input[type='radio'] {
+    display: none;
+}
+
+.titulo {
+    color: var(--emphasis-yellow);
+}
+
+.menu-link-0::before {
+    color: var(--link-bg-dark);
+}
+
+/* Red */
+
+.navbar-red, .footer-red {
+    background: var(--emphasis-red);
+}
+
+.titulo-red, .summary-title-red {
+    color: var(--emphasis-red);
+}
+
+/* Green */
+
+.navbar-green, .footer-green {
+    background: var(--emphasis-green);
+}
+
+.titulo-green, .summary-title-green {
+    color: var(--emphasis-green);
+}
+
+/* Blue */
+
+.navbar-blue, .footer-blue {
     background: var(--emphasis-blue);
 }
 
-.navbar a {
-    color: var(--link-bg-dark);
-} */
+.titulo-blue, .summary-title-blue {
+    color: var(--emphasis-blue);
+}
+
+/* Cyan */
+
+.navbar-cyan, .footer-cyan {
+    background: var(--emphasis-cyan);
+}
+
+.titulo-cyan, .summary-title-cyan {
+    color: var(--emphasis-cyan);
+}
+
+/* Magenta */
+
+.navbar-magenta, .footer-magenta {
+    background: var(--emphasis-magenta);
+}
+
+.titulo-magenta, .summary-title-magenta {
+    color: var(--emphasis-magenta);
+}
+
+/* Orange */
+
+.navbar-orange, .footer-orange {
+    background: var(--emphasis-orange);
+}
+
+.titulo-orange, .summary-title-orange {
+    color: var(--emphasis-orange);
+}
+
+/* Violet */
+
+.navbar-violet, .footer-violet {
+    background: var(--emphasis-violet);
+}
+
+.titulo-violet, .summary-title-violet {
+    color: var(--emphasis-violet);
+}
+
+/* Gray */
+
+.navbar-gray, .footer-gray {
+    background: var(--emphasis-gray);
+}
+
+.titulo-gray, .summary-title-gray {
+    color: var(--emphasis-gray);
+}
+
+/* Yellow, se precisar */
+
+.navbar-yellow, .footer-yellow {
+    background: var(--emphasis-yellow);
+}
+
+.titulo-yellow, .summary-title-yellow {
+    color: var(--emphasis-yellow);
+}
