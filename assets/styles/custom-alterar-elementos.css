@@ -7,7 +7,7 @@
     --emphasis-magenta: #FF1493;
     --emphasis-orange: #FF4500;
     --emphasis-violet: #9400D3;
-    --emphasis-gray: #565656;
+    --emphasis-gray: #434343;
 
     --link-bg-light:#222222;
     --link-bg-dark: #DDDDDD;
@@ -84,7 +84,7 @@
     background: var(--emphasis-red);
 }
 
-.titulo-red, .summary-title-red {
+.titulo-red {
     color: var(--emphasis-red);
 }
 
@@ -94,7 +94,7 @@
     background: var(--emphasis-green);
 }
 
-.titulo-green, .summary-title-green {
+.titulo-green {
     color: var(--emphasis-green);
 }
 
@@ -104,7 +104,7 @@
     background: var(--emphasis-blue);
 }
 
-.titulo-blue, .summary-title-blue {
+.titulo-blue {
     color: var(--emphasis-blue);
 }
 
@@ -114,7 +114,7 @@
     background: var(--emphasis-cyan);
 }
 
-.titulo-cyan, .summary-title-cyan {
+.titulo-cyan {
     color: var(--emphasis-cyan);
 }
 
@@ -124,7 +124,7 @@
     background: var(--emphasis-magenta);
 }
 
-.titulo-magenta, .summary-title-magenta {
+.titulo-magenta {
     color: var(--emphasis-magenta);
 }
 
@@ -134,7 +134,7 @@
     background: var(--emphasis-orange);
 }
 
-.titulo-orange, .summary-title-orange {
+.titulo-orange {
     color: var(--emphasis-orange);
 }
 
@@ -144,7 +144,7 @@
     background: var(--emphasis-violet);
 }
 
-.titulo-violet, .summary-title-violet {
+.titulo-violet {
     color: var(--emphasis-violet);
 }
 
@@ -154,7 +154,7 @@
     background: var(--emphasis-gray);
 }
 
-.titulo-gray, .summary-title-gray {
+.titulo-gray {
     color: var(--emphasis-gray);
 }
 
@@ -166,4 +166,28 @@
 
 .titulo-yellow, .summary-title-yellow {
     color: var(--emphasis-yellow);
+}
+
+/* Texts */
+
+.navbar-green, .footer-green, 
+.navbar-gray, .footer-gray, 
+.navbar-red, .footer-red,
+.navbar-violet, .footer-violet,
+.navbar-blue, .footer-blue {
+    color: var(--link-bg-dark);
+}
+
+.navbar-cyan, .footer-cyan,
+.navbar-orange, .footer-orange,
+.navbar-magenta, .footer-magenta,
+.navbar-yellow, .footer-yellow {
+    color: var(--link-bg-light);
+}
+
+.summary-title-red, .summary-title-green,
+.summary-title-blue, .summary-title-cyan,
+.summary-title-magenta, .summary-title-orange, 
+.summary-title-violet, .summary-title-gray {
+    color: var(--link-bg-dark);
 }

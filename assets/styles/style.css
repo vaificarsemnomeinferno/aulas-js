@@ -4,10 +4,10 @@
 
 :root {
     --emphasis-gray-color: #BBBBBB;
-    --emphasis-gray-color-darker: #999999;
+    --emphasis-gray-color-darker: #AAAAAA;
     --bg-color: #CCCCCC;
     --content-color: #DDDDDD;
-    --detail-color: #666666;
+    --detail-color: #555555;
     --emphasis-color: #DAA520;
     --emphasis-color-darker: #B8860B;
     --text-color: #222222;
@@ -182,7 +182,7 @@ ul#l0, ul#l1, ul#l2, ul#l3 {
 }
 
 h1 {
-    color: var(--emphasis-color);
+    color: var(--emphasis-color-darker);
 }
 
 h2 {
