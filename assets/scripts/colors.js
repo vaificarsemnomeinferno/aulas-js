@@ -1,6 +1,7 @@
 const navbar = document.querySelector('.navbar');
 const footer = document.querySelector('.footer');
 const titulo = document.querySelector('.titulo');
+const brand = document.querySelector('.brand');
 const summaryTitle = document.querySelector('.summary-title');
 var cor = document.getElementsByName('colors');
 var corEscolhida, corAnterior;
@@ -17,7 +18,14 @@ function alterarCores() {
             corEscolhida = cor[i].value;
         }
     }
-    preencherComCor(corEscolhida);    
+    preencherComCor(corEscolhida);
+    
+    if (corEscolhida == "blue" || corEscolhida == "violet" || corEscolhida == "red" || corEscolhida == "gray" || corEscolhida == "green") {
+        brand.classList.add('brand-light');
+    }
+    if (corEscolhida == "yellow" || corEscolhida == "magenta" || corEscolhida == "orange" || corEscolhida == "cyan") {
+        brand.classList.remove('brand-light');
+    }
 }
 
 function preencherComCor(corEscolhida) {
