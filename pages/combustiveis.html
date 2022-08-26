@@ -4,105 +4,117 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap" rel="stylesheet">
     <title>Atividades do curso de JavaScript</title>
-    <link rel="shortcut icon" type="imagex/png" href="../assets/favicon/javascript.ico" />
+    <link rel="shortcut icon" type="imagex/png" href="../assets/favicon/javascript.ico">
     <link rel="stylesheet" href="../assets/styles/style.css" />
     <link rel="stylesheet" href="../assets/icons/style.css" />
-    <script src="../assets/scripts/jquery.min.js" type="text/javascript"></script>
-    <script type="text/javascript">
-      $(function () {
-        $('#l0').load('../assets/items/menu.html .menu-link-0');
-        $('#l1').load('../assets/items/menu.html .menu-link-1');
-        $('#l2').load('../assets/items/menu.html .menu-link-2');
-        $('#l3').load('../assets/items/menu.html .menu-link-3');
-        $('#l4').load('../assets/items/menu.html .menu-link-4');
-        $('#contact').load('../assets/items/footer.html .contact');
-      })
-    </script>
   </head>
   <body onload="abrirEFecharSummary()">
     <nav class="navbar">
       <div class="container">
         <section class="left-title">
-          <a href="../index.html" class="brand"><span>Atividades de JavaScript</span></a>
+          <a href="index.html" class="brand"><span>Atividades de JavaScript</span></a>
         </section>
         <section class="right-title">
-          <span>Prof. Alex Ramos Ribeiro</span>
+          <!-- Coloque abaixo o seu nome -->
+          <span>Seu Nome Aqui</span>
         </section>
       </div>
     </nav>
     <main>
       <div class="container">
         <section class="menu" id="menu">
+          <!-- As tags <details> e <summary> eu não expliquei nas aulas de HTML, vou explicar nas aulas de JS. -->
           <details id="detail-1" open>
             <summary class="summary-title">Navegação:</summary>
-            <ul id="l0">
-
-            </ul>
+              <ul id="l0">
+                <li class="menu-link-0"><a href="../index.html">Página Inicial</a></li>
+                <li class="menu-link-0"><a href="sobremim.html">Sobre mim</a></li>
+              </ul>
             <details id="detail-2" open>
-              <summary class="summary-subtitle">Atividades</summary>
-              <ul id="l1">
-                <!-- Conteúdo do menu, vindo do assets/items/menu.html -->
-              </ul>
-            </details>
-            <details>
-              <summary class="summary-subtitle">Atividades de Revisão</summary>
-              <ul id="l2">
-                <!-- Conteúdo do menu, vindo do assets/items/menu.html -->
-              </ul>
-            </details>
-            <details>
-              <summary class="summary-subtitle">Extra</summary>
-              <ul id="l3">
-                <!-- Conteúdo do menu, vindo do assets/items/menu.html -->
-              </ul>
-            </details>
+            <summary class="summary-subtitle">Atividades</summary>
+            <ul class="menu-link" id="l1">
+              <li class="menu-link-1"><a href="funcoes.html">Clique Aqui/Não Clique Aqui</a></li>
+              <li class="menu-link-1"><a href="ola.html">Qual é o seu nome?</a></li>
+              <li class="menu-link-1"><a href="mensagem.html">Mensagem!</a></li>
+              <li class="menu-link-1"><a href="imposto.html">Cálculo do IPVA</a></li>
+              <li class="menu-link-1"><a href="parouimpar.html">Par ou ímpar?</a></li>
+              <li class="menu-link-1"><a href="combustiveis.html">Qual combustível abastecer?</a></li>
+              <li class="menu-link-1"><a href="datas.html">Trabalhando com datas</a></li>
+              <li class="menu-link-1"><a href="alterando-elementos.html">Alterando elementos</a></li>
+              <li class="menu-link-1"><a href="beneficio.html">Recebimento de Benefício</a></li>
+              <li class="menu-link-1"><a href="beneficio-filhos.html">Recebimento de Benefício (Exemplo 2)</a></li>
+              <li class="menu-link-1"><a href="investimento.html">Simulação de Investimento</a></li>
+              <li class="menu-link-1"><a href="parcelamento.html">Simulação de Parcelamento</a></li>
+              <li class="menu-link-1"><a href="tabuada.html">Calculando a Tabuada</a></li>
+            </ul>
           </details>
+          <details>
+            <summary class="summary-subtitle">Atividades de Revisão</summary>
+            <ul class="menu-link" id="l2">
+              <li class="menu-link-2"><a href="calculadora.html">Calculadora Básica</a></li>
+              <li class="menu-link-2"><a href="megasena.html">Gerador de Números para Mega-Sena</a></li>
+            </ul>
+          </details>
+        </details>
         </section>
         <section class="content">
-          <h2>Estruturas Condicionais</h2>
-          <h1>Qual combustível abastecer?</h1>
-          <p>Utilizamos nesse exemplo aquela estimativa muito comum para carros bicombustíveis, de que o preço do etanol é vantajoso quando custa até 70% do preço da gasolina. Nosso simulador indica se é mais vantajoso o etanol, a gasolina, ou caso crave os 70% ele responde que qualquer um dos dois é vantajoso.</p>
-          <h2>
-            A parte abaixo é apenas um teste para utilização dos formulários dos exemplos
-          </h2>
-          <form action="" method="post" class="form">
+          <h2>estruturas Condicionais</h2>
+          <h1>
+           Qual combustível abastecer? 
+          </h1>
+          <p>em veículos bicombustiveis uma conta que se costuma fazer para saber com qual combustível abastecer é: se o preço do etanl for até 70% do valor da gasolina, se abastece com etanol: se for maio do que 70%, se abastece com gasolina.</p>
+
+          <!--
+
+            Classes para utilização nos formulários:
+              Para layout:
+                linha (novas linhas)
+                division-1 : quando tem apenas uma coluna de controles de formulário -> inserir label, input e button
+                division-2 : quando tem duas colunas de controles de formulário -> inserir label e input
+                division-3 : quando tem três colunas de controles de formulário -> inserir label e input
+                buttons (linha para botões)
+              Para controles de formulário
+                form-label : formatar os labels do formulário
+                form-input : formatar as caixas de texto -> vale para input text, input select; desabilitadas basta colocar o atributo disabled
+              Para botões
+                form-button: formata o botão (obrigatório independentemente da cor)
+                button-primary : cor primária (amarela)
+                button-secondary: cor secundária (cinza)
+              Caixas para as respostas
+                output: formata a caixa (obrigatório independentemente da cor)
+                option-primary: borda na cor primária (amarela)
+                option-secondaty: borda na cor secundária (cinza)
+
+          -->
+          
+        <form>
             <div class="linha">
-              <div class="division-2">
-                <label for="etanol" class="form-label">Preço do Etanol</label>
-                <input type="text" name="habilitada" id="txtEtanol" class="form-input" />
-              </div>
-              <div class="division-2">
-                <label for="gasolina" class="form-label">Preço da Gasolina</label>
-                <input type="text" name="desabilitada" id="txtGasolina" class="form-input" />
-              </div>
+                <div class="division-2">
+                    <label for="txtEtanol" class="form-label">Digite o preço do Etanol</label>
+                    <input type="text" class="form-input" id="txtEtanol" autofocus>
+                </div>
+                <div class="division-2">
+                    <label for="" class="form-label">Digite o Preço da Gasolina</label>
+                    <input type="text" class="form-input" id="txtGasolina">
+                </div>
             </div>
             <div class="buttons">
-              <button type="button" class="form-button button-primary" onclick="calcularCombustivel()">Calcular</button>
-              <button type="reset" class="form-button button-secondary">Limpar</button>
+                <button type="button" class="form-button button-primary" onclick="calcularCombustiveis()">Calcular</button>
+                <button type="reset" class="form-button button-secondary">Limpar</button>
             </div>
-          </form>
-          <div class="output output-primary" id="resultado">
-            Isso é um teste para as respostas vindas do código JavaScript.
-          </div>
-          <div class="output output-secondary" id="resultado-sec">
-            Isso é outro teste para as respostas vindas do código JavaScript, quando precisarmos de algo secundário.
-          </div>
+        </form>
+        <div class="output output-primary" id="resultado"></div>
         </section>
       </div>
     </main>
     <footer class="footer">
       <div class="container">
         <section class="developer">
-          <p>
-            <span class="content-destaque">Página desenvolvida por Alex Ramos Ribeiro.</span>
-          </p>
+          <p><span class="content-destaque">Página desenvolvida por <!--Digite aqui o seu nome-->, sob a supervisão do professor <a href="http://github.com/alexrribeiro" class="footer-link-prof">Alex R. Ribeiro</a>.</span></p>
           <p>
             &copy;
             <script type="text/javascript">
@@ -111,12 +123,21 @@
             Todos os direitos reservados.
           </p>
         </section>
-        <section id="contact">
-          <!-- Conteúdo do /assets/items/footer.html .contact - Caso eu mude algo nas redes sociais -->
+        <!-- Se você não tiver - ou não quiser divulgar alguma rede - basta apagar o <a>...</a> correspondente.
+        Por favor, deixar pelo menos o link do seu github aqui. -->
+        <section class="contact">
+            <a href="https://www.github.com/naotemnomeinferno" target="_blank" class="footer-link">
+                <i class="icon-github"></i>
+            </a>
+            <a href="https://www.instagram.com/aline_casak" target="_blank" class="footer-link">
+                <i class="icon-instagram"></i>
+
+            </a>
         </section>
       </div>
     </footer>
-    <script type="text/javascript" src="../assets/scripts/scripts.js"></script>
+    <!-- Aqui vai o JavaScript da página -->
+    <script type="text/javascript" src="../assets/scripts/main.js"></script>
     <script type="text/javascript" src="../assets/scripts/condicionais.js"></script>
   </body>
 </html>

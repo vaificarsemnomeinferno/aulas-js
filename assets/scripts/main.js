@@ -1,3 +1,5 @@
+// Para que o menu seja fechado no mobile e aberto no desktop
+
 window.addEventListener('resize',abrirEFecharSummary);
 
 function abrirEFecharSummary() {
