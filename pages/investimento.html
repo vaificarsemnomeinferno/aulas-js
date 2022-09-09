@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Atividades do curso de JavaScript</title>
+    <link rel="shortcut icon" type="imagex/png" href="../assets/favicon/javascript.ico">
+    <link rel="stylesheet" href="../assets/styles/style.css" />
+    <link rel="stylesheet" href="../assets/icons/style.css" />
+  </head>
+  <body onload="abrirEFecharSummary()">
+    <nav class="navbar">
+      <div class="container">
+        <section class="left-title">
+          <a href="index.html" class="brand"><span>Atividades de JavaScript</span></a>
+        </section>
+        <section class="right-title">
+          <!-- Coloque abaixo o seu nome -->
+          <span>Seu Nome Aqui</span>
+        </section>
+      </div>
+    </nav>
+    <main>
+      <div class="container">
+        <section class="menu" id="menu">
+          <!-- As tags <details> e <summary> eu não expliquei nas aulas de HTML, vou explicar nas aulas de JS. -->
+          <details id="detail-1" open>
+            <summary class="summary-title">Navegação:</summary>
+              <ul id="l0">
+                <li class="menu-link-0"><a href="../index.html">Página Inicial</a></li>
+                <li class="menu-link-0"><a href="sobremim.html">Sobre mim</a></li>
+              </ul>
+            <details id="detail-2" open>
+            <summary class="summary-subtitle">Atividades</summary>
+            <ul class="menu-link" id="l1">
+              <li class="menu-link-1"><a href="funcoes.html">Clique Aqui/Não Clique Aqui</a></li>
+              <li class="menu-link-1"><a href="ola.html">Qual é o seu nome?</a></li>
+              <li class="menu-link-1"><a href="mensagem.html">Mensagem!</a></li>
+              <li class="menu-link-1"><a href="imposto.html">Cálculo do IPVA</a></li>
+              <li class="menu-link-1"><a href="parouimpar.html">Par ou ímpar?</a></li>
+              <li class="menu-link-1"><a href="combustiveis.html">Qual combustível abastecer?</a></li>
+              <li class="menu-link-1"><a href="datas.html">Trabalhando com datas</a></li>
+              <li class="menu-link-1"><a href="alterando-elementos.html">Alterando elementos</a></li>
+              <li class="menu-link-1"><a href="beneficio.html">Recebimento de Benefício</a></li>
+              <li class="menu-link-1"><a href="beneficio-filhos.html">Recebimento de Benefício (Exemplo 2)</a></li>
+              <li class="menu-link-1"><a href="investimento.html">Simulação de Investimento</a></li>
+              <li class="menu-link-1"><a href="parcelamento.html">Simulação de Parcelamento</a></li>
+              <li class="menu-link-1"><a href="tabuada.html">Calculando a Tabuada</a></li>
+            </ul>
+          </details>
+          <details>
+            <summary class="summary-subtitle">Atividades de Revisão</summary>
+            <ul class="menu-link" id="l2">
+              <li class="menu-link-2"><a href="calculadora.html">Calculadora Básica</a></li>
+              <li class="menu-link-2"><a href="megasena.html">Gerador de Números para Mega-Sena</a></li>
+            </ul>
+          </details>
+        </details>
+        </section>
+        <section class="content">
+          <h2>Estrutura de Repetição</h2>
+          <h1>
+            simulação de um investimento
+          </h1>
+          <p>Neste exemplo utilizamos uma estrutura de repetição para simular (de maneira simplificada, apenas para efeito didático sem impostos e taxas) o quanto u investimento renderá em dinheiro a cada mês(0,55% a. m. neste exemplo). o usuario digita o valor a investir e quantos meses deseja deixar o dinheiro aplicado. O código deverá mostrar o valor ao final e tambem detalhadamente a cada, mês a projeção dos valores ganhos. ultilizamos a estrutura de repetição <span class="monospace">while</span>na criação desse exemplo</p> 
+
+          <!--
+
+            Classes para utilização nos formulários:
+              Para layout:
+                linha (novas linhas)
+                division-1 : quando tem apenas uma coluna de controles de formulário -> inserir label, input e button
+                division-2 : quando tem duas colunas de controles de formulário -> inserir label e input
+                division-3 : quando tem três colunas de controles de formulário -> inserir label e input
+                buttons (linha para botões)
+              Para controles de formulário
+                form-label : formatar os labels do formulário
+                form-input : formatar as caixas de texto -> vale para input text, input select; desabilitadas basta colocar o atributo disabled
+              Para botões
+                form-button: formata o botão (obrigatório independentemente da cor)
+                button-primary : cor primária (amarela)
+                button-secondary: cor secundária (cinza)
+              Caixas para as respostas
+                output: formata a caixa (obrigatório independentemente da cor)
+                option-primary: borda na cor primária (amarela)
+                option-secondaty: borda na cor secundária (cinza)
+
+          -->
+          
+        
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <section class="developer">
+          <p><span class="content-destaque">Página desenvolvida por <!--Digite aqui o seu nome-->, sob a supervisão do professor <a href="http://github.com/alexrribeiro" class="footer-link-prof">Alex R. Ribeiro</a>.</span></p>
+          <p>
+            &copy;
+            <script type="text/javascript">
+              document.write(new Date().getFullYear())
+            </script>
+            Todos os direitos reservados.
+          </p>
+        </section>
+        <!-- Se você não tiver - ou não quiser divulgar alguma rede - basta apagar o <a>...</a> correspondente.
+        Por favor, deixar pelo menos o link do seu github aqui. -->
+        <section class="contact">
+            <a href="https://www.github.com/naotemnomeinferno" target="_blank" class="footer-link">
+                <i class="icon-github"></i>
+            </a>
+            <a href="https://www.instagram.com/aline_casak" target="_blank" class="footer-link">
+                <i class="icon-instagram"></i>
+
+            </a>
+        </section>
+      </div>
+    </footer>
+    <!-- Aqui vai o JavaScript da página -->
+    <script type="text/javascript" src="../assets/scripts/main.js"></script>
+  </body>
+</html>
