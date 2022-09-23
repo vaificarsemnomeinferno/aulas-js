@@ -91,7 +91,24 @@
 
           -->
           
-        
+          <form action="" method="post" class="form">
+            <div class="linha">
+              <div class="division-2">
+                <label for="txtValor" class="form-label">Valor a investir</label>
+                <input type="text" name="valor" class="form-input" id="txtValor">
+              </div>
+              <div class="division-2">
+                <label for="txtMeses" class="form-label">Meses a investir</label>
+                <input type="text" name="meses" class="form-input" id="txtMeses">
+              </div>
+              <div class="bottons">
+                <button type="button" class="form-button button-primary" onclick="simularInvestimento()">simular</button>
+                <button type="reset" class="form-button button-secondary">Limpar</button>
+              </div>
+            </div>
+          </form>
+          <div class="output output-primary" id="resultado"></div>
+          <div class="output output-secondary" id="resultado-sec"></div>
         </section>
       </div>
     </main>
@@ -122,5 +139,6 @@
     </footer>
     <!-- Aqui vai o JavaScript da página -->
     <script type="text/javascript" src="../assets/scripts/main.js"></script>
+    <script type="text/javascript" src="../assets/scripts/repeticao.js"></script>
   </body>
 </html>
