@@ -52,3 +52,19 @@ function simularParcelamento(){
     
 
 }
+
+
+
+function obtertabuada(){
+    var numero = document.getElementById("txtNumero").value
+    var resultado = document.getElementById("resultado") 
+    resultado.style.display = "block";
+    var produto
+
+    resultado.innerHTML = ""
+
+    for( var i=0; i<= 10; i++){
+        produto = numero * i;
+        resultado.innerHTML += ("<p>"+ numero + "x" + i + " = " + produto + "</p>")
+    }
+}
